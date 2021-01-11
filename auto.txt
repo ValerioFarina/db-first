@@ -1,22 +1,22 @@
-id								INT
-marca							VARCHAR(25)
-modello							VARCHAR(25)
-prezzo							MEDIUMINT
-anno_immatricolazione			YYYY
-targa							CHAR(7)
-chilometri						MEDIUMINT
-potenza							TINYINT
-cilindata						SMALLINT
-tipologia_vettura				VARCHAR(15)
-colore							VARCHAR(15)
-classe_emissione				CHAR(5)
-alimentazione					VARCHAR(15)
-numero_posti					TINYINT
-numero_porte					TINYINT
-cambio							VARCHAR(15)
-lunghezza						SMALLINT
-larghezza						TINYINT
-altezza							TINYINT
-capacità_serbatoio				SMALLINT
-descrizione						TEXT
-note							VARCHAR(255)
+id								INT, PRIMARY KEY (=> AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX)
+marca							VARCHAR(25), NOT NULL, INDEX
+modello							VARCHAR(25), NOT NULL, INDEX
+prezzo							MEDIUMINT, NOT NULL, INDEX
+anno_immatricolazione			YYYY, NOT NULL
+targa							CHAR(7), NOT NULL, UNIQUE
+chilometri						MEDIUMINT, NOT NULL
+potenza							TINYINT, NULL
+cilindata						SMALLINT, NULL
+tipologia_vettura				VARCHAR(15), NULL, DEFAULT("altro")
+colore							VARCHAR(15), NULL
+classe_emissione				CHAR(5), NULL
+alimentazione					VARCHAR(15), NULL
+numero_posti					TINYINT, NULL
+numero_porte					TINYINT, NULL
+cambio							VARCHAR(15), NULL
+lunghezza						SMALLINT, NULL
+larghezza						TINYINT, NULL
+altezza							TINYINT, NULL
+capacita_serbatoio				SMALLINT, NULL
+descrizione						TEXT, NULL
+note							VARCHAR(255), NULL
