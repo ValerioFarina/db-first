@@ -1,22 +1,22 @@
-id
-marca
-modello
-prezzo
-data_immatricolazione
-targa
-chilometri
-potenza
-cilindata
-tipologia_vettura
-colore
-classe_emissione
-alimentazione
-numero_posti
-numero_porte
-cambio
-lunghezza
-larghezza
-altezza
-capacità_serbatoio
-descrizione
-note
+id								INT
+marca							VARCHAR(25)
+modello							VARCHAR(25)
+prezzo							MEDIUMINT
+anno_immatricolazione			YYYY
+targa							CHAR(7)
+chilometri						MEDIUMINT
+potenza							TINYINT
+cilindata						SMALLINT
+tipologia_vettura				VARCHAR(15)
+colore							VARCHAR(15)
+classe_emissione				CHAR(5)
+alimentazione					VARCHAR(15)
+numero_posti					TINYINT
+numero_porte					TINYINT
+cambio							VARCHAR(15)
+lunghezza						SMALLINT
+larghezza						TINYINT
+altezza							TINYINT
+capacità_serbatoio				SMALLINT
+descrizione						TEXT
+note							VARCHAR(255)
